@@ -1,0 +1,26 @@
+Embeded message template:
+
+const embed = new Discord.RichEmbed()
+	.setColor(colors)
+	.setTitle("Help")
+	//.setDescription("Returning stats for team "+teamNumber+" in the "+season+" Season")
+	//.setURL("https://api.vexdb.io/v1/get_teams")
+	.setFooter("Triggered by: "+message.author.username, message.author.avatarURL);
+embed.addField('!tomorrow', "Shows information about tomorrow", true);
+embed.addField('!date <month/date>', "Shows information about that date", true);
+embed.addField('!next <*>', "Searches for next date that includes *", true);
+message.channel.send({embed});
+
+
+
+Basic code to call a function that gets data from google sheets:
+
+// Load client secrets from a local file.
+fs.readFile('credentials.json', (err, content) => {
+  if (err) return console.log('Error loading client secret file:', err);
+  // Authorize a client with credentials, then call the Google Sheets API.
+  authorize(JSON.parse(content), listUserData, message);
+});
+
+
+Requesting Data about sheets we have:

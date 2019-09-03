@@ -1,0 +1,21 @@
+{
+    "bot": {
+        "sideColor": [53, 144, 255],
+        "showURL": false,
+        "showTiggeredBy": true,
+        "showDescription": false,
+        "showPresence":true,
+        "presenceName": "for \"!help\"",
+        "presenceID": 3,
+        "deleteCommands": false,
+        "botID": ""
+    },
+    "sheets": {
+        "spreadsheetIDConst": "",
+        "range": "A2:G"
+    },
+    "storage": {
+        "tokenFilePath": "extra/token.json",
+        "credentialsFilePath": "extra/credentials.json"
+    }
+}
